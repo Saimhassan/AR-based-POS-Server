@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Phone"
+            android:text=""
+            android:textSize="30sp" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:hint="Password"
+            android:text=""
+            android:id="@+id/txtpassword"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/sign_in"
+        android:text="SIGN IN"
+        android:layout_alignBottom="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
